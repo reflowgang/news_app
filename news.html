@@ -1,3 +1,42 @@
-<html>
-    <button> text="hi" </button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+          <h1>World News</h1>
+          <div class="theme-toggle">
+            <button id="theme-button" onclick="toggleTheme()">💡</button>
+          </div>
+        </div>
+        <nav class="main-nav">
+            <a class="nav-button home-button" href="news.html">Home</a>
+            <div class="nav-group">
+            <a class="nav-button" href="good-news.html">Good News</a>
+            <a class="nav-button" href="bad-news.html">Bad News</a>
+            <a class="nav-button" href="climate.html">Climate</a>
+          </div>
+        </nav>
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="Search news..." required />
+          <button type="submit">Search</button>
+        </form>
+      </header>
+      
+
+  <main>
+    <h2 style="text-align:center; margin-top:30px; font-size:24px;">Top trending news for today</h2>
+    <section id="news-container"></section>
+  </main>
+
+  <footer>
+    <p>Current news - 2025</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
